@@ -1,0 +1,23 @@
+{
+  "name": "electronbaseproject",
+  "version": "1.0.0",
+  "description": "A brand-new Electron project to serve as basis for new projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diegojsRW/electronbaseproject.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node . --info --debug --color=16m"
+  },
+  "author": "Diego V. G. Silva",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "electron": "^1.8.4",
+    "jquery": "^3.3.1",
+    "less": "^3.0.1",
+    "moment": "^2.21.0"
+  }
+}

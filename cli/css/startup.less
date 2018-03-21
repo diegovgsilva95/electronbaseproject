@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+
+@color_fg: #9ee9f8;
+@color_bg: #2B2E3B;
+@icon-size: 6vmin;
+
+body {
+    justify-content: space-around;
+    background-color: @color_bg;
+    color: @color_fg;
+    font-family: "Dosis";
+    font-size: @icon-size / 2;
+
+    @import "startup-header.less";
+    @import "startup-main.less";
+    @import "startup-footer.less";
+    @import "startup-canvas.less";
+}

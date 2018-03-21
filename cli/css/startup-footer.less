@@ -1,0 +1,48 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    nav {
+        display: flex;
+        flex-direction: row;
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-flex;
+            align-items: center;
+            &.btn {
+                background: @color_bg;
+                color: @color_fg;
+                padding: (@icon-size / 8) (@icon-size / 4);
+                margin: 0px @icon-size 0 0px;
+                border-radius: @icon-size;
+                box-shadow: 0px 0px 0px @color_fg;
+                transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out;
+                font-weight: bold;
+                font-size: 125%;
+                &:hover {
+                    box-shadow: 0px 0px 10px @color_fg;
+                    background: @color_fg;
+                    color: @color_bg;
+                }
+            }
+
+            @import "startup-socialnetwork.less";
+
+            &.github {
+                .social-network("../img/GitHub-Mark-Light-120px-plus.png", "../img/GitHub-Mark-120px-plus.png");
+            }
+            &.youtube {
+                .social-network("../img/yt_icon_mono_dark.png", "../img/yt_icon_mono_light.png", 60%);
+            }
+        }
+    }
+
+    .footnote {
+        display: block;
+        padding: @icon-size;
+        font-size: 80%;
+        font-style: italic;
+    }
+}

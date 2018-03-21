@@ -1,0 +1,14 @@
+.social-network(@normal-bg, @hover-bg, @bg-size: contain){
+    &::before {
+        content: "";
+        background: no-repeat url(@normal-bg) center/@bg-size;
+        width: @icon-size * 1.5;
+        height: @icon-size;
+        display: inline-block;
+    }
+    &:hover {
+        &::before {
+            background: no-repeat url(@hover-bg) center/@bg-size;
+        }
+    }
+}
